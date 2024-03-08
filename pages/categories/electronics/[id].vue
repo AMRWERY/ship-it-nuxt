@@ -68,7 +68,7 @@
                 <div class="flex mb-4">
                     <span class="flex items-center">
 
-                        <Rating :rating="productDetails?.rating" :reviews="productDetails?.reviews" />
+                        <rating :rating="productDetails?.rating" :reviews="productDetails?.reviews" />
 
                     </span>
                     <span class="flex py-2 pl-3 ml-3 border-l-2 border-gray-200">
@@ -237,7 +237,6 @@
 <script setup>
 import { useRouter } from 'vue-router';
 import { useElectronicsProductsStore } from '@/stores/products/electronicsProductsStore'
-import Rating from "@/reusable/Rating.vue";
 
 const store = useElectronicsProductsStore()
 const router = useRouter()

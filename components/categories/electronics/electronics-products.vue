@@ -31,9 +31,7 @@
                                 {{ product.title }}
                             </h5>
                             <div class="mt-2.5 mb-5 flex items-center space-x-2">
-                                <!-- <i class="fa-solid fa-star text-yellow-300 [&>svg]:h-5 [&>svg]:w-5"></i> -->
-                                <!-- <Rating /> -->
-
+                              
                                 <rating :rating="product.rating" />
 
                                 <span class="mr-2 rounded bg-yellow-200 px-2.5 py-0.5 text-xs font-semibold">{{

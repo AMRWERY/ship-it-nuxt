@@ -68,7 +68,7 @@
                 <div class="flex mb-4">
                     <span class="flex items-center">
 
-                        <Rating :rating="productDetails?.rating" :reviews="productDetails?.reviews" />
+                        <rating :rating="productDetails?.rating" :reviews="productDetails?.reviews" />
 
                     </span>
                     <span class="flex py-2 pl-3 ml-3 border-l-2 border-gray-200">
