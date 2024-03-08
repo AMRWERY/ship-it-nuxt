@@ -1,0 +1,30 @@
+body {
+  background-color: #f3f1f5;
+}
+
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.ltr {
+  direction: ltr;
+  text-align: left;
+}
+
+.dark {
+  background-color: #0d2438;
+}
+
+.desc::-webkit-scrollbar {
+  width: 6px;
+}
+
+.desc::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+  border-radius: 6px;
+}
+
+.desc::-webkit-scrollbar-track {
+  background-color: #eee;
+}
