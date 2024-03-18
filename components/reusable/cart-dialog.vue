@@ -1,7 +1,6 @@
 <template>
     <!-- drawer init and toggle -->
-    <button type="button"
-        class="text-gray-600 transition duration-200 hover:ease-in-out disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+    <button type="button" class="relative p-1 text-gray-300 rounded-full hover:text-gray-400"
         data-drawer-target="drawer-right-example" data-drawer-show="drawer-right-example" data-drawer-placement="right"
         aria-controls="drawer-right-example" title="Cart" data-tooltip-target="tooltip-2-bottom"
         data-tooltip-placement="bottom">
@@ -14,7 +13,7 @@
             <i class="fa-solid fa-cart-shopping fa-xl"></i>
         </span>
         <span
-            class="absolute -mt-2 -ml-1 rounded-full bg-danger px-[0.65em] py-[0.45em] text-[0.6rem] font-bold leading-none text-white">{{
+            class="absolute -mt-2 -ms-2 rounded-full bg-danger px-[0.65em] py-[0.45em] text-[0.6rem] font-bold leading-none text-white bg-red-500">{{
                 cartStore.cart.length }}</span>
     </button>
 

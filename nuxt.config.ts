@@ -1,12 +1,13 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  // ssr: false,
   modules: [
     "@nuxtjs/tailwindcss",
     "nuxt-headlessui",
     "@pinia/nuxt",
     "@formkit/nuxt",
     "vue3-carousel-nuxt",
-    '@nuxtjs/i18n'
+    "@nuxtjs/i18n",
   ],
   tailwindcss: {
     cssPath: "~/assets/css/tailwind.css",
@@ -58,6 +59,7 @@ export default defineNuxtConfig({
           charset: "utf-8",
         },
       ],
+      // htmlAttrs: { dir: 'ltr' },
     },
     pageTransition: { name: "page", mode: "out-in" },
     layoutTransition: { name: "layout", mode: "out-in" },

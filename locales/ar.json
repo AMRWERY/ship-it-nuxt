@@ -11,9 +11,9 @@
     "cart": "عربه التسوق"
   },
   "menu": {
-    "profile": "الملف الشخصي",
+    "your_profile": "ملفك الشخصي",
     "dashboard": "لوحة القيادة",
-    "logout": "تسجيل الخروج"
+    "sign_out": "تسجيل الخروج"
   },
   "btn": {
     "login": "تسجيل الدخول",
@@ -109,12 +109,19 @@
     "beauty": "الجمال",
     "juniors_and_kids": "الصغار والأطفال"
   },
-  "contact": {
+  "contact_us": {
     "contact_us": "اتصل بنا",
     "get_in_touch_with_us": "تواصل معنا",
+    "lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_sed_do_eiusmod_tempor_incididunt_ut_labore_et_dolore": "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسينغ إيليت، سيد، دو إيوسمود تمبور إنسيديدونت أوت لابوري إت دولوري",
     "our_location": "موقعنا",
     "maadi_cairo_egypt": "المعادي، القاهرة، مصر",
     "phone_number": "رقم الهاتف",
     "email_address": "عنوان البريد الإلكتروني"
+  },
+  "footer": {
+    "get_connected_with_us_on_social_networks": "اتصل بنا على وسائل التواصل الاجتماعي",
+    "online_to_make_your_journey_even_more_memorable_access_or_meet": "عبر الإنترنت لجعل رحلتك أكثر تذكرًا قم بالوصول أو اللقاء",
+    "contact": "اتصل",
+    "©_2024_copyright": "© حقوق النشر 2024:"
   }
 }

@@ -11,9 +11,9 @@
     "cart": "Cart"
   },
   "menu": {
-    "profile": "profile",
+    "your_profile": "Your Profile",
     "dashboard": "Dashboard",
-    "logout": "logout"
+    "sign_out": "Sign out"
   },
   "btn": {
     "login": "Login",
@@ -109,12 +109,19 @@
     "beauty": "Beauty",
     "juniors_and_kids": "Juniors & Kids"
   },
-  "contact": {
+  "contact_us": {
     "contact_us": "Contact Us",
     "get_in_touch_with_us": "Get In Touch With Us",
+    "lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_sed_do_eiusmod_tempor_incididunt_ut_labore_et_dolore": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore",
     "our_location": "Our Location",
     "maadi_cairo_egypt": "Maadi, Cairo, Egypt",
     "phone_number": "Phone Number",
     "email_address": "Email Address"
+  },
+  "footer": {
+    "get_connected_with_us_on_social_networks": "Get connected with us on social networks",
+    "online_to_make_your_journey_even_more_memorable_access_or_meet": "Online to make your journey even more memorable access or meet",
+    "contact": "Contact",
+    "©_2024_copyright": "© 2024 Copyright:"
   }
 }

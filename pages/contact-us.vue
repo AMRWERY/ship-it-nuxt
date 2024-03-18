@@ -1,55 +1,55 @@
 <template>
     <div>
         <section
-            class="relative z-10 max-w-7xl mx-auto overflow-hidden bg-white dark:bg-dark py-20 px-14 lg:py-[120px]">
+            class="relative z-10 max-w-7xl mx-auto overflow-hidden bg-white dark:bg-dark py-20 px-14 lg:py-[80px] my-10 rounded-xl">
             <div class="container mx-auto">
                 <div class="flex flex-wrap -mx-4 lg:justify-between">
                     <div class="w-full px-4 lg:w-1/2 xl:w-6/12">
                         <div class="mb-12 max-w-[570px] lg:mb-0">
-                            <span class="block mb-4 text-base font-semibold text-primary">{{ $t('contact.contact_us')
+                            <span class="block text-lg font-semibold text-primary">{{ $t('contact_us.contact_us')
                                 }}</span>
                             <h2
-                                class="text-dark dark:text-white mb-6 text-[32px] font-bold sm:text-[40px] lg:text-[36px] xl:text-[40px]">
-                                {{ $t('contact.get_in_touch_with_us') }}
+                                class="text-dark mb-6 text-[32px] font-bold sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+                                {{ $t('contact_us.get_in_touch_with_us') }}
                             </h2>
                             <p class="text-base leading-relaxed text-body-color dark:text-dark-6 mb-9">
                                 {{
-                                $t('blogs.lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_sed_do_eiusmod_tempor_incididunt_ut_labore_et_dolore')
+                                $t('contact_us.lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_sed_do_eiusmod_tempor_incididunt_ut_labore_et_dolore')
                             }}
                             </p>
                             <div class="mb-8 flex w-full max-w-[370px]">
                                 <div
-                                    class="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
-                                    <i class="fa-solid fa-house fa-3x"></i>
+                                    class="bg-primary/5 text-primary me-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
+                                    <i class="text-gray-700 fa-solid fa-house fa-3x"></i>
                                 </div>
                                 <div class="w-full">
-                                    <h4 class="mb-1 text-xl font-bold text-dark dark:text-white">{{
-                                    $t('contact.our_location') }}</h4>
-                                    <p class="text-base text-body-color dark:text-dark-6">
-                                        {{ $t('contact.maadi_cairo_egypt') }}
+                                    <h4 class="mb-1 text-xl font-bold text-gray-800 dark:text-white">{{
+                                    $t('contact_us.our_location') }}</h4>
+                                    <p class="text-base text-gray-800 dark:text-dark-6">
+                                        {{ $t('contact_us.maadi_cairo_egypt') }}
                                     </p>
                                 </div>
                             </div>
                             <div class="mb-8 flex w-full max-w-[370px]">
                                 <div
-                                    class="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
-                                    <i class="fa-solid fa-phone fa-3x"></i>
+                                    class="bg-primary/5 text-primary me-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
+                                    <i class="text-gray-700 fa-solid fa-phone fa-3x"></i>
                                 </div>
                                 <div class="w-full">
-                                    <h4 class="mb-1 text-xl font-bold text-dark dark:text-white">{{
-                                $t('contact.phone_number') }}</h4>
-                                    <p class="text-base text-body-color dark:text-dark-6">(+20)10 226 557 42</p>
+                                    <h4 class="mb-1 text-xl font-bold text-gray-800 dark:text-white">{{
+                                $t('contact_us.phone_number') }}</h4>
+                                    <p class="text-base text-gray-800 dark:text-dark-6">(+20)10 226 557 42</p>
                                 </div>
                             </div>
                             <div class="mb-8 flex w-full max-w-[370px]">
                                 <div
-                                    class="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
-                                    <i class="fa-regular fa-envelope fa-3x"></i>
+                                    class="bg-primary/5 text-primary me-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
+                                    <i class="text-gray-700 fa-regular fa-envelope fa-3x"></i>
                                 </div>
                                 <div class="w-full">
-                                    <h4 class="mb-1 text-xl font-bold text-dark dark:text-white">{{
-                                $t('contact.email_address') }}</h4>
-                                    <p class="text-base text-body-color dark:text-dark-6">amrmounir2@gmail.com</p>
+                                    <h4 class="mb-1 text-xl font-bold text-gray-800 dark:text-white">{{
+                                $t('contact_us.email_address') }}</h4>
+                                    <p class="text-base text-gray-800 dark:text-dark-6">amrmounir2@gmail.com</p>
                                 </div>
                             </div>
                         </div>
@@ -81,13 +81,13 @@
                                 </div>
                             </form>
                             <div>
-                                <span class="absolute -top-10 -right-9 z-[-1]">
+                                <span class="absolute -top-10 -end-9 z-[-1]">
                                     <img src="/contact-1.svg" />
                                 </span>
-                                <span class="absolute -right-10 top-[90px] z-[-1]">
+                                <span class="absolute -end-10 top-[90px] z-[-1]">
                                     <img src="/contact-2.svg" />
                                 </span>
-                                <span class="absolute -left-7 -bottom-7 z-[-1]">
+                                <span class="absolute -start-7 -bottom-7 z-[-1]">
                                     <img src="/contact-3.svg" />
                                 </span>
                             </div>

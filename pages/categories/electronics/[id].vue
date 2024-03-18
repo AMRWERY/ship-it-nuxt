@@ -1,5 +1,6 @@
 <template>
-    <section class="overflow-hidden bg-white py-11 font-poppins dark:bg-gray-800">
+    <div>
+        <section class="overflow-hidden bg-white py-11 font-poppins dark:bg-gray-800">
         <div class="py-6 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <nav class="flex">
                 <ol role="list" class="flex items-center">
@@ -231,6 +232,7 @@
                 </p>
             </div>
         </div> -->
+    </div>
     </div>
 </template>
 

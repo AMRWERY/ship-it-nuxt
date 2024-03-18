@@ -56,10 +56,8 @@
         </div>
     </div>
 </template>
-  
-<script setup>
-// import { ref } from "vue";
 
+<script setup>
 // const items = ref([
 //     { id: 1, title: 'Back End Developer', department: 'Engineering', type: 'Full-time', location: 'Remote' },
 //     { id: 2, title: 'Front End Developer', department: 'Engineering', type: 'Full-time', location: 'Remote' },
