@@ -2,7 +2,7 @@
     <div>
         <div class="max-w-full py-6 mx-auto space-y-6 sm:px-6 lg:px-8">
             <section class="max-w-full m-10 mx-auto sm:px-6 lg:px-8">
-                <h2 class="mb-6 text-3xl font-semibold text-center text-gray-700">{{ $t('home.new_arrivals') }}</h2>
+                <h2 class="text">{{ $t('home.new_arrivals') }}</h2>
                 <Carousel :wrapAround="true" v-bind="settings" :breakpoints="breakpoints">
                     <Slide v-for="card in arrivalOne" :key="card">
                         <div class="carousel__item">
@@ -132,7 +132,7 @@
 <script setup>
 import { Carousel, Slide, Navigation } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
-import { useI18n } from 'vue-i18n'
+// import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
 

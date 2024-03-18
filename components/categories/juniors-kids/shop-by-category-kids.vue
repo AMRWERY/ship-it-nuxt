@@ -1,7 +1,7 @@
 <template>
-    <div class="max-w-5xl py-6 mx-auto sm:px-6 lg:px-8">
+    <div class="max-w-5xl pb-6 mx-auto sm:px-6 lg:px-8">
         <section class="container max-w-full m-10 mx-auto sm:px-6 lg:px-8">
-            <h2 class="mb-10 text-3xl font-semibold text-center">Shop by Category</h2>
+            <h2 class="mb-6 text">{{ $t('categories.shop_by_category') }}</h2>
             <Carousel v-bind="settings" :breakpoints="breakpoints" :wrapAround="true" :transition="500" :autoplay="3000">
                 <Slide v-for="(card, index) in store.shopByCategoryKids" :key="index">
                     <div class="relative carousel__item">

@@ -2,10 +2,10 @@
     <div>
         <div class="max-w-full py-6 mx-auto sm:px-6 lg:px-8">
             <section class="body-font">
-                <h2 class="mb-6 text-3xl font-semibold text-center text-gray-700">
+                <h2 class="text">
                     {{ $t('home.users_feedback') }}
                 </h2>
-                <div class="px-5 py-12 mx-auto">
+                <div class="px-5 py-6 mx-auto">
                     <div class="flex flex-wrap -m-4">
                         <div class="p-4 md:w-1/3" v-for="card in cards" :key="card">
                             <div class="h-full overflow-hidden border-2 border-gray-800 rounded-lg">
@@ -44,7 +44,7 @@
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n'
+// import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
 

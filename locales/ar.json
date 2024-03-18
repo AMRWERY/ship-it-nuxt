@@ -19,6 +19,7 @@
     "login": "تسجيل الدخول",
     "continue_with_google": "المتابعة مع جوجل",
     "sign_in": "تسجيل الدخول",
+    "sign_up": "تسجيل جساب جديد",
     "remove": "إزالة",
     "apply": "تطبيق",
     "learn_more": "اعرف المزيد",
@@ -31,7 +32,9 @@
     "create_free_account": "إنشاء حساب مجاني",
     "continue_with": "المتابعة مع",
     "email_address": "عنوان البريد الإلكتروني",
-    "password": "كلمة المرور"
+    "username": "اسم المستخدم",
+    "password": "كلمة المرور",
+    "already_have_an_account": "هل لديك حساب بالفعل؟"
   },
   "placeholder": {
     "your_email": "بريدك الإلكتروني",
@@ -117,8 +120,13 @@
     "watches_and_jewelry": "الساعات والمجوهرات",
     "handbags_and_bags": "الحقائب والشنط",
     "accessories": "الإكسسوارات",
+    "watches_and_accessories": "الساعات والإكسسوارات",
     "make_a_statement_everyday_and_glam_up": "ابدأ في التميز كل يوم واجعل إطلالتك متألقة",
     "make_your_outdoor_adventures_even_cooler": "اجعل مغامراتك في الهواء الطلق أكثر برودة",
+    "elevate_your_outfit_with_the_right_pair_of_sunglasses": "قم بتحسين مظهرك بالزوج المناسب من النظارات الشمسية",
+    "make_your_wrists_sparkle_with_the_best_watches_around": "اجعل معصمك يتألق بأفضل الساعات المتوفرة",
+    "shop_for_charming_baby_boy_apparel": "تسوّق للملابس الجذابة للأطفال الذكور",
+    "shop_for_charming_baby_girl_apparel": "تسوّق للملابس الجذابة للأطفال الإناث",
     "new_arrivals": "وصل حديثا"
   },
   "contact_us": {
@@ -135,5 +143,10 @@
     "online_to_make_your_journey_even_more_memorable_access_or_meet": "عبر الإنترنت لجعل رحلتك أكثر تذكرًا قم بالوصول أو اللقاء",
     "contact": "اتصل",
     "©_2024_copyright": "© حقوق النشر 2024:"
+  },
+  "validation": {
+    "email_address_is_required": "البريد الإلكتروني مطلوب",
+    "password_is_required": "كلمة المرور مطلوبة",
+    "username_is_required": "اسم المستخدم مطلوب"
   }
 }

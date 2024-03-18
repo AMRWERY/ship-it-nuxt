@@ -24,7 +24,7 @@
       </nuxt-link>
     </div>
     <!-- Slider indicators -->
-    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2 rtl:space-x-reverse">
+    <div class="absolute z-30 flex -translate-x-1/2 space-s-3 bottom-5 left-1/2">
       <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
         data-carousel-slide-to="0"></button>
       <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"

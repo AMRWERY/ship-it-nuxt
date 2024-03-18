@@ -1,7 +1,7 @@
 <template>
-    <div class="max-w-full py-6 mx-auto sm:px-6 lg:px-8">
+    <div class="max-w-full pb-6 mx-auto sm:px-6 lg:px-8">
         <section class="container max-w-full m-10 mx-auto sm:px-6 lg:px-8">
-            <h2 class="mb-10 text-3xl font-semibold text-center">Express Deals</h2>
+            <h2 class="mb-6 text">{{ $t('categories.express_deals') }}</h2>
             <Carousel v-bind="settings" :breakpoints="breakpoints" :wrapAround="true" :transition="500"
                 :autoplay="3000">
                 <Slide v-for="(card, index) in storeTwo.expressDeals" :key="index">
@@ -41,9 +41,9 @@
         </section>
     </div>
 
-    <div class="max-w-full py-6 mx-auto sm:px-6 lg:px-8">
+    <div class="max-w-full pb-6 mx-auto sm:px-6 lg:px-8">
         <section class="container max-w-full m-10 mx-auto sm:px-6 lg:px-8">
-            <h2 class="mb-10 text-3xl font-semibold text-center">Global Deals</h2>
+            <h2 class="mb-6 text">{{ $t('categories.global_deals') }}</h2>
             <Carousel v-bind="settings" :breakpoints="breakpoints" :wrapAround="true" :transition="500"
                 :autoplay="3000">
                 <Slide v-for="(card, index) in store.globalDeals" :key="index">
@@ -83,7 +83,7 @@
         </section>
     </div>
 
-    <section class="container max-w-full py-6 mx-auto mt-8 sm:px-6 lg:px-8">
+    <section class="container max-w-full pb-6 mx-auto mt-8 sm:px-6 lg:px-8">
         <img src="https://justfields.com/storage/projects/7M5rV059/sec-4-kids-banner.gif">
     </section>
 
@@ -93,7 +93,7 @@
                 <div
                     class="block max-w-full xs:min-w-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
                     <div class="p-6 text-center">
-                        <p class="mb-2 truncate">{{ card.title }}</p>
+                        <p class="mb-2 text-lg font-medium truncate">{{ card.title }}</p>
                         <p class="text-base text-neutral-600 dark:text-neutral-200">
                             {{ card.subtitle }}
                         </p>
@@ -156,9 +156,11 @@ const getImageUrlExpress = (imgPath) => {
     return image ? image.url : '';
 };
 
+const { t } = useI18n()
+
 const cards = ref([
-    { title: 'Shop for charming Baby Boy apparel', img: 'https://justfields.com/storage/projects/7M5rV059/baby-boy-collection.webp' },
-    { title: 'Shop for charming Baby Girl apparel', img: 'https://justfields.com/storage/projects/7M5rV059/baby-girl-collection.webp' }
+    { title: t('categories.shop_for_charming_baby_boy_apparel'), img: 'https://justfields.com/storage/projects/7M5rV059/baby-boy-collection.webp' },
+    { title: t('categories.shop_for_charming_baby_girl_apparel'), img: 'https://justfields.com/storage/projects/7M5rV059/baby-girl-collection.webp' }
 ])
 
 const settings = ref({

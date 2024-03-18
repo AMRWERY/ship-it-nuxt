@@ -1,7 +1,7 @@
 <template>
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="max-w-2xl py-8 mx-auto sm:py-24 lg:max-w-none">
-            <h2 class="text-4xl font-bold text-gray-900">{{ $t('categories.categories') }}</h2>
+            <h2 class="mb-12 text-4xl font-bold text-gray-900">{{ $t('categories.categories') }}</h2>
             <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0 lg:gap-y-12">
                 <div v-for="category in categories" :key="category" class="relative group">
                     <div
@@ -19,9 +19,9 @@
         </div>
     </div>
 </template>
-  
+
 <script setup>
-import { useI18n } from 'vue-i18n'
+// import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
 

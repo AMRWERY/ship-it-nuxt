@@ -19,6 +19,7 @@
     "login": "Login",
     "continue_with_google": "Continue with Google",
     "sign_in": "Sign in",
+    "sign_up": "Sign up",
     "remove": "Remove",
     "apply": "Apply",
     "learn_more": "Learn more",
@@ -31,7 +32,9 @@
     "create_free_account": "Create free account",
     "continue_with": "continue with",
     "email_address": "Email address",
-    "password": "Password"
+    "username": "Username",
+    "password": "Password",
+    "already_have_an_account": "Already have and account"
   },
   "placeholder": {
     "your_email": "your email",
@@ -117,8 +120,13 @@
     "watches_and_jewelry": "Watches & Jewelry",
     "handbags_and_bags": "Handbags & Bags",
     "accessories": "Accessories",
+    "watches_and_accessories": "Watches & Accessories",
     "make_a_statement_everyday_and_glam_up": "Make a statement everyday and Glam Up",
     "make_your_outdoor_adventures_even_cooler": "Make your outdoor adventures even cooler",
+    "elevate_your_outfit_with_the_right_pair_of_sunglasses": "Elevate your outfit with the right pair of sunglasses",
+    "make_your_wrists_sparkle_with_the_best_watches_around": "Make your wrists sparkle with the best watches around",
+    "shop_for_charming_baby_boy_apparel": "Shop for charming Baby Boy apparel",
+    "shop_for_charming_baby_girl_apparel": "Shop for charming Baby Girl apparel",
     "new_arrivals": "New Arrivals"
   },
   "contact_us": {
@@ -135,5 +143,10 @@
     "online_to_make_your_journey_even_more_memorable_access_or_meet": "Online to make your journey even more memorable access or meet",
     "contact": "Contact",
     "©_2024_copyright": "© 2024 Copyright:"
+  },
+  "validation": {
+    "email_address_is_required": "email address is required",
+    "password_is_required": "password is required",
+    "username_is_required": "username is required"
   }
 }

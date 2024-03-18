@@ -1,7 +1,7 @@
 <template>
-    <div class="max-w-full py-6 mx-auto sm:px-6 lg:px-8">
+    <div class="max-w-full pb-6 mx-auto sm:px-6 lg:px-8">
         <section class="container max-w-full m-10 mx-auto sm:px-6 lg:px-8">
-            <h2 class="mb-10 text-3xl font-semibold text-center">Shop by Category</h2>
+            <h2 class="mb-6 text">{{ $t('categories.shop_by_category') }}</h2>
             <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
                 <div v-for="category in categories" :key="category" class="relative group transit">
                     <div
@@ -32,7 +32,7 @@
                     <div
                         class="block max-w-full xs:min-w-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
                         <div class="p-6 text-center">
-                            <p class="mb-2 text-xl font-medium truncate">{{ card.title }}</p>
+                            <p class="mb-2 text-lg font-medium truncate">{{ card.title }}</p>
                         </div>
                         <div class="relative overflow-hidden bg-no-repeat bg-cover">
                             <img class="w-full transit" :src="card.img" />
@@ -45,14 +45,16 @@
 </template>
 
 <script setup>
+const { t } = useI18n()
+
 const categories = reactive([
-    { title: 'Clothing', img: 'https://justfields.com/storage/projects/7M5rV059/men-clothing.webp' },
-    { title: 'Watches & Accessories', img: 'https://justfields.com/storage/projects/7M5rV059/men_watches.webp' },
-    { title: 'Shoes', img: 'https://justfields.com/storage/projects/7M5rV059/men_shoes.webp' },
+    { title: t('categories.clothing'), img: 'https://justfields.com/storage/projects/7M5rV059/men-clothing.webp' },
+    { title: t('categories.watches_and_accessories'), img: 'https://justfields.com/storage/projects/7M5rV059/men_watches.webp' },
+    { title: t('categories.shoes'), img: 'https://justfields.com/storage/projects/7M5rV059/men_shoes.webp' },
 ])
 
 const cards = reactive([
-    { title: 'Elevate your outfit with the right pair of sunglasses', img: 'https://justfields.com/storage/projects/7M5rV059/men-sunglasses.webp' },
-    { title: 'Make your wrists sparkle with the best watches around!', img: 'https://justfields.com/storage/projects/7M5rV059/men-watches-c.webp' }
+    { title: t('categories.elevate_your_outfit_with_the_right_pair_of_sunglasses'), img: 'https://justfields.com/storage/projects/7M5rV059/men-sunglasses.webp' },
+    { title: t('categories.make_your_wrists_sparkle_with_the_best_watches_around'), img: 'https://justfields.com/storage/projects/7M5rV059/men-watches-c.webp' }
 ])
 </script>

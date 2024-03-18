@@ -1,5 +1,5 @@
 <template>
-    <footer
+    <footer v-if="!hideNavbar"
         class="mt-12 text-center bg-neutral-100 text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
         <div
             class="flex items-center justify-center p-6 border-b-2 border-neutral-200 dark:border-neutral-500 lg:justify-between">
@@ -104,5 +104,13 @@
 </template>
 
 <script setup>
+const route = useRoute()
 
+const hideNavbar = computed(() => {
+    return route.path === '/sign-up'
+})
+
+const hideFooter = computed(() => {
+    return route.path === '/sign-up'
+})
 </script>

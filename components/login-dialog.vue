@@ -40,7 +40,7 @@
 
                                     <div class="mt-5">
                                         <p>{{ $t('auth.or') }} <nuxt-link to="/sign-up" class="text-blue-600"
-                                                @click="closeModal">{{ $t('auth.create_free_account') }}</nuxt-link>
+                                                @click="closeModal = true">{{ $t('auth.create_free_account') }}</nuxt-link>
                                         </p>
                                     </div>
 
@@ -67,6 +67,7 @@
                                                 <div class="mt-2">
                                                     <FormKit name="email" type="email" validation="required|email"
                                                         v-model="email" :placeholder="$t('placeholder.your_email')"
+                                                        :validation-messages="{ required: $t('validation.email_address_is_required') }"
                                                         validation-visibility="dirty" message-class="text-red-600"
                                                         outer-class="mb-5"
                                                         inner-class="max-w-md mb-1 overflow-hidden rounded-lg"
@@ -77,13 +78,13 @@
                                             <div>
                                                 <div class="flex items-center justify-between">
                                                     <label for="password"
-                                                        class="block text-sm font-medium leading-6 text-gray-900">{{
-                                                        $t('auth.password') }}
+                                                        class="block text-sm font-medium leading-6 text-gray-900">{{ $t('auth.password') }}
                                                         <span class="text-red-600">*</span></label>
                                                 </div>
                                                 <div class="mt-2">
                                                     <FormKit name="password" type="password"
                                                         validation="required|password|length:6,10" v-model="password"
+                                                        :validation-messages="{ required: $t('validation.password_is_required') }"
                                                         validation-visibility="dirty"
                                                         :placeholder="$t('placeholder.your_password')"
                                                         message-class="text-red-600" outer-class="mb-5"
@@ -117,10 +118,7 @@ import { initModals } from 'flowbite'
 const store = useAuthStore()
 const email = ref('')
 const password = ref('')
-
-const closeModal = () => {
-    document.querySelector('#bottom-left-modal').classList.add('hidden')
-}
+const closeModal = ref(false)
 
 const signIn = () => {
     store.userSignIn({
@@ -129,7 +127,7 @@ const signIn = () => {
     });
     email.value = ''
     password.value = ''
-    closeModal()
+    // closeModal.value = true
 };
 
 const signInWithGoogleAccount = () => {

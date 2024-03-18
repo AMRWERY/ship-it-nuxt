@@ -2,7 +2,7 @@
   <div>
     <div class="max-w-5xl py-6 mx-auto sm:px-6 lg:px-8">
       <section class="max-w-full m-10 mx-auto sm:px-6 lg:px-8">
-        <h2 class="mb-6 text-3xl font-semibold text-center text-gray-700">{{ $t('home.shop_by_brand') }}</h2>
+        <h2 class="mb-6 text">{{ $t('home.shop_by_brand') }}</h2>
         <Carousel v-bind="settings" :breakpoints="breakpoints" :wrapAround="true" :transition="500" :autoplay="3000">
           <Slide v-for="(card, index) in store.shopByBrand" :key="index">
             <div class="carousel__item">
@@ -54,7 +54,7 @@
 import { useShopByBrandStore } from '@/stores/shopByBrandStore'
 import { Carousel, Slide, Navigation } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
-import { useI18n } from 'vue-i18n'
+// import { useI18n } from 'vue-i18n'
 
 const store = useShopByBrandStore()
 const { t } = useI18n()
