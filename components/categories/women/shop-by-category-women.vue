@@ -1,7 +1,7 @@
 <template>
-    <div class="max-w-full py-6 mx-auto sm:px-6 lg:px-8">
+    <div class="max-w-full pb-6 mx-auto sm:px-6 lg:px-8">
         <section class="container max-w-full m-10 mx-auto sm:px-6 lg:px-8">
-            <h2 class="mb-6 text">Shop by Category</h2>
+            <h2 class="mb-6 text">{{ $t('categories.shop_by_category') }}</h2>
             <div class="grid grid-cols-1 mt-6 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-5 xl:gap-x-8">
                 <div v-for="category in categories" :key="category" class="relative group transit">
                     <div
@@ -12,7 +12,7 @@
                         <div>
                             <h3 class="text-lg font-semibold text-gray-700">
                                 <a href="">
-                                    <span aria-hidden="true" class="absolute inset-0" />
+                                    <span aria-hidden="true" class="absolute inset-0"></span>
                                     {{ category.title }}
                                 </a>
                             </h3>
@@ -48,16 +48,20 @@
 </template>
 
 <script setup>
-const categories = reactive([
-    { title: 'Clothing', img: 'https://justfields.com/storage/projects/7M5rV059/cat_clothing.webp' },
-    { title: 'Shoes', img: 'https://justfields.com/storage/projects/7M5rV059/cat_shoes.webp' },
-    { title: 'Watches & Jewelry', img: 'https://justfields.com/storage/projects/7M5rV059/cat_Watches.webp' },
-    { title: 'Handbags & Bags', img: 'https://justfields.com/storage/projects/7M5rV059/cat_bags.webp' },
-    { title: 'Accessories', img: 'https://justfields.com/storage/projects/7M5rV059/cat_accessories.webp' },
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
+const categories = ref([
+    { title: t('categories.clothing'), img: 'https://justfields.com/storage/projects/7M5rV059/cat_clothing.webp' },
+    { title: t('categories.shoes'), img: 'https://justfields.com/storage/projects/7M5rV059/cat_shoes.webp' },
+    { title: t('categories.watches_and_jewelry'), img: 'https://justfields.com/storage/projects/7M5rV059/cat_Watches.webp' },
+    { title: t('categories.handbags_and_bags'), img: 'https://justfields.com/storage/projects/7M5rV059/cat_bags.webp' },
+    { title: t('categories.accessories'), img: 'https://justfields.com/storage/projects/7M5rV059/cat_accessories.webp' },
 ])
 
-const cards = reactive([
-    { title: 'Make a statement everyday and Glam Up', img: 'https://justfields.com/storage/projects/7M5rV059/women-dress-2.webp' },
-    { title: 'Make your outdoor adventures even cooler', img: 'https://justfields.com/storage/projects/7M5rV059/women-sports-outfit.webp' }
+const cards = ref([
+    { title: t('categories.make_a_statement_everyday_and_glam_up'), img: 'https://justfields.com/storage/projects/7M5rV059/women-dress-2.webp' },
+    { title: t('categories.make_your_outdoor_adventures_even_cooler'), img: 'https://justfields.com/storage/projects/7M5rV059/women-sports-outfit.webp' }
 ])
 </script>

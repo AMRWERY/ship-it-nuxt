@@ -156,7 +156,7 @@ const getImageUrlExpress = (imgPath) => {
     return image ? image.url : '';
 };
 
-const cards = reactive([
+const cards = ref([
     { title: 'Shop for charming Baby Boy apparel', img: 'https://justfields.com/storage/projects/7M5rV059/baby-boy-collection.webp' },
     { title: 'Shop for charming Baby Girl apparel', img: 'https://justfields.com/storage/projects/7M5rV059/baby-girl-collection.webp' }
 ])

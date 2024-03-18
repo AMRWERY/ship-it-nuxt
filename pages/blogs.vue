@@ -60,7 +60,7 @@ import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
 
-const cards = reactive([
+const cards = ref([
     { title: t('blogs.top_10_fashion_of_the_week'), img: 'https://justfields.com/storage/projects/7M5rV059/slider3.jpg' },
     { title: t('blogs.best_brands_for_fashion'), img: 'https://justfields.com/storage/projects/7M5rV059/slider01.jpg' },
     { title: t('blogs.fashion_tips_and_tricks'), img: 'https://justfields.com/storage/projects/7M5rV059/slider04.jpg' },

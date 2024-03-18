@@ -25,7 +25,7 @@ import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
 
-const categories = reactive([
+const categories = ref([
     { title: t('categories.women'), poster: 'https://justfields.com/storage/projects/7M5rV059/women.webp', route: '/categories/women' },
     { title: t('categories.men'), poster: 'https://justfields.com/storage/projects/7M5rV059/men.jpg', route: '/categories/men' },
     { title: t('categories.electronics'), poster: 'https://justfields.com/storage/projects/7M5rV059/electronics.jpg', route: '/categories/electronics' },

@@ -45,13 +45,13 @@
 </template>
 
 <script setup>
-const categories = reactive([
+const categories = ref([
     { title: 'Clothing', img: 'https://justfields.com/storage/projects/7M5rV059/men-clothing.webp' },
     { title: 'Watches & Accessories', img: 'https://justfields.com/storage/projects/7M5rV059/men_watches.webp' },
     { title: 'Shoes', img: 'https://justfields.com/storage/projects/7M5rV059/men_shoes.webp' },
 ])
 
-const cards = reactive([
+const cards = ref([
     { title: 'Elevate your outfit with the right pair of sunglasses', img: 'https://justfields.com/storage/projects/7M5rV059/men-sunglasses.webp' },
     { title: 'Make your wrists sparkle with the best watches around!', img: 'https://justfields.com/storage/projects/7M5rV059/men-watches-c.webp' }
 ])
