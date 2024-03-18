@@ -95,7 +95,7 @@ const breakpoints = ref({
   },
 });
 
-const cards = ref([
+const cards = reactive([
   { title: t('home.activewear_for_your_coolness'), subtitle: t('home.large_collections_of_activewear_explore_the_outside'), img: 'https://justfields.com/storage/projects/7M5rV059/activewear.jpg', route: '' },
   { title: t('home.too_cool_hipster_kids_clothes'), subtitle: t('home.every_kid_needs_this_place_it_is_fun_inside_check_out_the_coolest_kids'), img: 'https://justfields.com/storage/projects/7M5rV059/4-Kids.jpg', route: '' },
   { title: t('home.a_never_ending_sunglasses_season'), subtitle: t('home.on_any_and_all_occasions_the_right_pair_of_shades_will_elevate_your_days_out'), img: 'https://justfields.com/storage/projects/7M5rV059/6-sunglasses.jpg', route: '' },
