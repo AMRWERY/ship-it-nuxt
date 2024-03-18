@@ -127,7 +127,7 @@ import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
 
-const navigation = ref([
+const navigation = reactive([
     { name: t('layout.home'), route: '/', current: true },
     { name: t('layout.categories'), route: '/categories', current: false },
     { name: t('layout.blogs'), route: '/blogs', current: false },
