@@ -40,7 +40,8 @@
 
                                     <div class="mt-5">
                                         <p>{{ $t('auth.or') }} <nuxt-link to="/sign-up" class="text-blue-600"
-                                                @click="closeModal = true">{{ $t('auth.create_free_account') }}</nuxt-link>
+                                                @click="createFreeAccount">{{ $t('auth.create_free_account')
+                                                }}</nuxt-link>
                                         </p>
                                     </div>
 
@@ -56,7 +57,7 @@
 
                                     <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-md">
                                         <FormKit type="form" id="my-form" class="space-y-6" :actions="false"
-                                            @submit="signIn()">
+                                            :incomplete-message='false' @submit="signIn()">
                                             <div>
                                                 <div class="flex items-center justify-between">
                                                     <label for="email"
@@ -78,7 +79,8 @@
                                             <div>
                                                 <div class="flex items-center justify-between">
                                                     <label for="password"
-                                                        class="block text-sm font-medium leading-6 text-gray-900">{{ $t('auth.password') }}
+                                                        class="block text-sm font-medium leading-6 text-gray-900">{{
+                $t('auth.password') }}
                                                         <span class="text-red-600">*</span></label>
                                                 </div>
                                                 <div class="mt-2">
@@ -134,6 +136,13 @@ const signInWithGoogleAccount = () => {
     store.signInWithGoogle({
         email: email.value,
     });
+};
+
+const createFreeAccount = () => {
+    closeModal.value = true
+    setTimeout(() => {
+        location.reload();
+    }, 1000);
 };
 
 onMounted(() => {

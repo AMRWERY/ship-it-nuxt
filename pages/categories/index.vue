@@ -32,4 +32,8 @@ const categories = reactive([
     { title: t('categories.beauty'), poster: 'https://justfields.com/storage/projects/7M5rV059/beauty.jpg', route: '/categories/beauty' },
     { title: t('categories.juniors_and_kids'), poster: 'https://justfields.com/storage/projects/7M5rV059/kids.jpg', route: '/categories/juniors-kids' },
 ]);
+
+useHead({
+    title: t('head.categories')
+})
 </script>

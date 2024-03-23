@@ -100,5 +100,9 @@
 </template>
 
 <script setup>
+const { t } = useI18n()
 
+useHead({
+    title: t('head.contact_us')
+})
 </script>

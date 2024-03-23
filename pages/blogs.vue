@@ -70,4 +70,8 @@ const cardDetails = ref(null)
 const openDialog = (card) => {
     cardDetails.value = card
 }
+
+useHead({
+    title: t('head.blogs')
+})
 </script>

@@ -148,5 +148,11 @@
     "email_address_is_required": "البريد الإلكتروني مطلوب",
     "password_is_required": "كلمة المرور مطلوبة",
     "username_is_required": "اسم المستخدم مطلوب"
+  },
+  "head": {
+    "sign_up_new_account": "إنشاء حساب جديد",
+    "categories": "التصنيفات",
+    "blogs": "المدونات",
+    "contact_us": "اتصل بنا"
   }
 }

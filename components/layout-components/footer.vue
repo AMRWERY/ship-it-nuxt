@@ -1,5 +1,5 @@
 <template>
-    <footer v-if="!hideNavbar"
+    <footer v-if="!hideFooter"
         class="mt-12 text-center bg-neutral-100 text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
         <div
             class="flex items-center justify-center p-6 border-b-2 border-neutral-200 dark:border-neutral-500 lg:justify-between">
@@ -49,27 +49,27 @@
                     <p class="mb-4">
                         <nuxt-link to="/categories/women"
                             class="flex justify-center text-neutral-600 dark:text-neutral-200 md:justify-start">{{
-                    $t('categories.women') }}</nuxt-link>
+        $t('categories.women') }}</nuxt-link>
                     </p>
                     <p class="mb-4">
                         <nuxt-link to="/categories/men"
                             class="flex justify-center text-neutral-600 dark:text-neutral-200 md:justify-start">{{
-                    $t('categories.men') }}</nuxt-link>
+        $t('categories.men') }}</nuxt-link>
                     </p>
                     <p class="mb-4">
                         <nuxt-link to="/categories/juniors-kids"
                             class="flex justify-center text-neutral-600 dark:text-neutral-200 md:justify-start">{{
-                    $t('categories.juniors_and_kids') }}</nuxt-link>
+        $t('categories.juniors_and_kids') }}</nuxt-link>
                     </p>
                     <p class="mb-4">
                         <nuxt-link to="/categories/electronics"
                             class="flex justify-center text-neutral-600 dark:text-neutral-200 md:justify-start">{{
-                    $t('categories.electronics') }}</nuxt-link>
+        $t('categories.electronics') }}</nuxt-link>
                     </p>
                     <p>
                         <nuxt-link to="/categories/beauty"
                             class="flex justify-center text-neutral-600 dark:text-neutral-200 md:justify-start">{{
-                    $t('categories.beauty') }}</nuxt-link>
+        $t('categories.beauty') }}</nuxt-link>
                     </p>
                 </div>
 
@@ -105,10 +105,6 @@
 
 <script setup>
 const route = useRoute()
-
-const hideNavbar = computed(() => {
-    return route.path === '/sign-up'
-})
 
 const hideFooter = computed(() => {
     return route.path === '/sign-up'

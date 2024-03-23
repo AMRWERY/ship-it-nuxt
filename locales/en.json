@@ -148,5 +148,11 @@
     "email_address_is_required": "email address is required",
     "password_is_required": "password is required",
     "username_is_required": "username is required"
+  },
+  "head": {
+    "sign_up_new_account": "Sign up new account",
+    "categories": "Categories",
+    "blogs": "Blogs",
+    "contact_us": "Contact Us"
   }
 }

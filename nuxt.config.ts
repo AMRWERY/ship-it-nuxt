@@ -19,6 +19,9 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  i18n: {
+    vueI18n: "./i18n.config.ts",
+  },
   headlessui: {
     prefix: "Headless",
   },
@@ -29,8 +32,8 @@ export default defineNuxtConfig({
     autoImport: true,
     configFile: "./formkit-configs/formkit.config.js",
   },
-  i18n: {
-    vueI18n: "./i18n.config.ts",
+  carousel: {
+    prefix: "MyPrefix",
   },
   css: ["./assets/css/main.css"],
   components: [

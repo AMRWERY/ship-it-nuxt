@@ -4,7 +4,7 @@
             <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div class="relative flex items-center justify-between h-16">
                     <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                        <!-- Mobile menu button-->
+                        <!-- Mobile menu button -->
                         <HeadlessDisclosureButton
                             class="relative inline-flex items-center justify-center px-2 py-4 text-gray-400 rounded-md hover:bg-gray-700 hover:text-white">
                             <span class="absolute -inset-0.5" />
@@ -123,12 +123,12 @@
 
 <script setup>
 import { initTooltips } from 'flowbite'
-// import { useI18n } from 'vue-i18n'
+import { useI18n } from 'vue-i18n'
 
-const { t } = useI18n()
 const route = useRoute()
+const { t } = useI18n()
 
-const navigation = reactive([
+const navigation = ref([
     { name: t('layout.home'), route: '/', current: true },
     { name: t('layout.categories'), route: '/categories', current: false },
     { name: t('layout.blogs'), route: '/blogs', current: false },
@@ -202,10 +202,6 @@ watch(currentLang, (newLang) => {
 // }
 
 const hideNavbar = computed(() => {
-    return route.path === '/sign-up'
-})
-
-const hideFooter = computed(() => {
     return route.path === '/sign-up'
 })
 
